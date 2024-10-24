@@ -150,10 +150,10 @@ function App() {
 
   return (
     <div>
-      <h1>Todo App</h1>
+      <h1>Todo's App</h1>
 
       {/* Adicionar Targets */}
-      <h2>Add Target</h2>
+      <h2>Adicionar Target</h2>
       <input
         type="text"
         placeholder="Title"
@@ -188,15 +188,15 @@ function App() {
                 });
               }}
             >
-              Edit
+              Editar
             </button>
-            <button onClick={() => deleteTarget(target.id)}>Delete</button>
+            <button onClick={() => deleteTarget(target.id)}>Deletar</button>
           </li>
         ))}
       </ul>
 
       {/* Adicionar Todos */}
-      <h2>Add Todo</h2>
+      <h2>Adicionar Todo</h2>
       <input
         type="text"
         placeholder="Title"
@@ -229,7 +229,7 @@ function App() {
       </button>
 
       {/* Renderizar Todos */}
-      <h2>Todos</h2>
+      <h2>Todo's</h2>
       {targets.map((target) => (
         <div key={target.id}>
           <h3>{target.title}</h3>
